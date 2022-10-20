@@ -10,7 +10,7 @@ Input:
 
 Returns:
 - Landcover map with seven land cover classes 
-![image](lcn_classes.png)
+![lcn_classes.png](https://github.com/kkalkidan/AfricaLandCoverClassify/blob/main/afrimap/lcn_classes.png)
 
 ## Modules
 
@@ -19,7 +19,7 @@ The Afrimap package is consists of four modules:
 2. Data Preparation Module
 3. Training and Inference Module
 4. Post-processing Module
-![afrimap_modules](afrimap_modules.png)
+![afrimap_modules.png](https://github.com/kkalkidan/AfricaLandCoverClassify/blob/main/afrimap/afrimap_modules.png)
 The first three modules have two phases or types, training and inference phase. And, the last module is run only during the inference phase.
 ```
 Usage: afrimap [OPTIONS] COMMAND [ARGS]...
