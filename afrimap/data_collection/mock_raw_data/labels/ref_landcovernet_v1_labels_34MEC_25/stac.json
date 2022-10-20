@@ -1,0 +1,380 @@
+{
+    "assets": {
+        "documentation": {
+            "href": "../_common/documentation.pdf",
+            "title": "Dataset Documentation",
+            "type": "application/pdf"
+        },
+        "labels": {
+            "href": "labels.tif",
+            "title": "Land Cover"
+        },
+        "source_dates": {
+            "href": "source_dates.csv",
+            "title": "Source Imagery Dates",
+            "type": "text/csv"
+        }
+    },
+    "bbox": [
+        21.636104635392705,
+        -2.0498044777416418,
+        21.659132950342194,
+        -2.0266358281658508
+    ],
+    "collection": "ref_landcovernet_v1_labels",
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    21.636113725178785,
+                    -2.0498044777416418
+                ],
+                [
+                    21.636104635392705,
+                    -2.0266450858480267
+                ],
+                [
+                    21.659123531678514,
+                    -2.0266358281658508
+                ],
+                [
+                    21.659132950342194,
+                    -2.0497951141815256
+                ],
+                [
+                    21.636113725178785,
+                    -2.0498044777416418
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "id": "ref_landcovernet_v1_labels_34MEC_25",
+    "links": [
+        {
+            "href": "../collection.json",
+            "rel": "collection"
+        },
+        {
+            "href": "../collection.json",
+            "rel": "parent"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180102/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180107/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180112/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180117/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180122/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180127/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180201/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180206/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180211/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180216/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180221/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180226/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180303/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180308/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180313/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180318/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180323/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180328/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180402/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180407/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180412/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180417/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180422/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180427/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180502/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180507/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180512/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180517/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180522/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180601/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180606/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180611/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180616/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180621/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180626/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180701/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180706/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180711/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180716/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180721/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180726/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180731/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180805/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180810/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180815/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180820/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180825/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180830/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180904/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180909/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180914/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180919/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180924/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20180929/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181004/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181009/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181014/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181019/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181024/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181029/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181103/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181108/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181118/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181123/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181128/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181203/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181208/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181213/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181218/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181223/stac.json",
+            "rel": "source"
+        },
+        {
+            "href": "../../ref_landcovernet_v1_source/ref_landcovernet_v1_source_34MEC_25_20181228/stac.json",
+            "rel": "source"
+        }
+    ],
+    "properties": {
+        "datetime": "2018-07-01T00:00:00Z",
+        "label:classes": [
+            {
+                "classes": [
+                    "No Data",
+                    "Water",
+                    "Artificial Bareground",
+                    "Natural Bareground",
+                    "Permanent Snow/Ice",
+                    "Woody Vegetation",
+                    "Cultivated Vegetation",
+                    "(Semi) Natural Vegetation"
+                ],
+                "name": "labels"
+            }
+        ],
+        "label:description": "Land Cover Type Classification",
+        "label:properties": [
+            "labels"
+        ],
+        "label:type": "raster",
+        "labels": [
+            "Woody Vegetation",
+            "Cultivated Vegetation",
+            "(Semi) Natural Vegetation"
+        ]
+    },
+    "stac_extensions": [
+        "label"
+    ],
+    "stac_version": "1.0.0-beta.2",
+    "type": "Feature"
+}

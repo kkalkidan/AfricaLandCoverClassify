@@ -1,0 +1,308 @@
+{
+    "assets": {
+        "B01": {
+            "eo:bands": [
+                {
+                    "common_name": "Coastal Aerosol",
+                    "description": "Coastal Aerosol",
+                    "name": "B01"
+                }
+            ],
+            "href": "B01.tif",
+            "title": "34MEC_21_20180318_B01_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B02": {
+            "eo:bands": [
+                {
+                    "common_name": "Blue",
+                    "description": "Blue",
+                    "name": "B02"
+                }
+            ],
+            "href": "B02.tif",
+            "title": "34MEC_21_20180318_B02_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B03": {
+            "eo:bands": [
+                {
+                    "common_name": "Green",
+                    "description": "Green",
+                    "name": "B03"
+                }
+            ],
+            "href": "B03.tif",
+            "title": "34MEC_21_20180318_B03_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B04": {
+            "eo:bands": [
+                {
+                    "common_name": "Red",
+                    "description": "Red",
+                    "name": "B04"
+                }
+            ],
+            "href": "B04.tif",
+            "title": "34MEC_21_20180318_B04_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B05": {
+            "eo:bands": [
+                {
+                    "common_name": "Vegetation Red Edge",
+                    "description": "Vegetation Red Edge (704.1nm)",
+                    "name": "B05"
+                }
+            ],
+            "href": "B05.tif",
+            "title": "34MEC_21_20180318_B05_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B06": {
+            "eo:bands": [
+                {
+                    "common_name": "Vegetation Red Edge",
+                    "description": "Vegetation Red Edge (740.1nm)",
+                    "name": "B06"
+                }
+            ],
+            "href": "B06.tif",
+            "title": "34MEC_21_20180318_B06_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B07": {
+            "eo:bands": [
+                {
+                    "common_name": "Vegetation Red Edge",
+                    "description": "Vegetation Red Edge (782.8nm)",
+                    "name": "B07"
+                }
+            ],
+            "href": "B07.tif",
+            "title": "34MEC_21_20180318_B07_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B08": {
+            "eo:bands": [
+                {
+                    "common_name": "NIR",
+                    "description": "NIR",
+                    "name": "B08"
+                }
+            ],
+            "href": "B08.tif",
+            "title": "34MEC_21_20180318_B08_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B09": {
+            "eo:bands": [
+                {
+                    "common_name": "Water Vapour",
+                    "description": "Water Vapour",
+                    "name": "B09"
+                }
+            ],
+            "href": "B09.tif",
+            "title": "34MEC_21_20180318_B09_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B11": {
+            "eo:bands": [
+                {
+                    "common_name": "SWIR",
+                    "description": "SWIR (1613.7nm)",
+                    "name": "B11"
+                }
+            ],
+            "href": "B11.tif",
+            "title": "34MEC_21_20180318_B11_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B12": {
+            "eo:bands": [
+                {
+                    "common_name": "SWIR",
+                    "description": "SWIR (2202.4nm)",
+                    "name": "B12"
+                }
+            ],
+            "href": "B12.tif",
+            "title": "34MEC_21_20180318_B12_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "B8A": {
+            "eo:bands": [
+                {
+                    "common_name": "Narrow NIR",
+                    "description": "Narrow NIR",
+                    "name": "B8A"
+                }
+            ],
+            "href": "B8A.tif",
+            "title": "34MEC_21_20180318_B8A_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "CLD": {
+            "eo:bands": [
+                {
+                    "common_name": "Cloud Mask",
+                    "description": "Cloud Mask",
+                    "name": "CLD"
+                }
+            ],
+            "href": "CLD.tif",
+            "title": "34MEC_21_20180318_CLD_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        },
+        "SCL": {
+            "eo:bands": [
+                {
+                    "common_name": "Scene Classification Layer",
+                    "description": "Scene Classification Layer",
+                    "name": "SCL"
+                }
+            ],
+            "href": "SCL.tif",
+            "title": "34MEC_21_20180318_SCL_10m",
+            "type": "image/tiff; application=geotiff; profile=cloud-optimized"
+        }
+    },
+    "bbox": [
+        21.11632384278292,
+        -2.691459904442069,
+        21.13935728121631,
+        -2.668296932137724
+    ],
+    "collection": "ref_landcovernet_v1_source",
+    "geometry": {
+        "coordinates": [
+            [
+                [
+                    21.116326029027505,
+                    -2.691459904442069
+                ],
+                [
+                    21.11632384278292,
+                    -2.6682993378635316
+                ],
+                [
+                    21.139354662122884,
+                    -2.668296932137724
+                ],
+                [
+                    21.13935728121631,
+                    -2.691457477805415
+                ],
+                [
+                    21.116326029027505,
+                    -2.691459904442069
+                ]
+            ]
+        ],
+        "type": "Polygon"
+    },
+    "id": "ref_landcovernet_v1_source_34MEC_21_20180318",
+    "links": [
+        {
+            "href": "../collection.json",
+            "rel": "collection"
+        },
+        {
+            "href": "../collection.json",
+            "rel": "parent"
+        }
+    ],
+    "properties": {
+        "constellation": "Sentinel-2",
+        "datetime": "2018-03-18T00:00:00Z",
+        "eo:bands": [
+            {
+                "common_name": "Coastal Aerosol",
+                "description": "Coastal Aerosol",
+                "name": "B01"
+            },
+            {
+                "common_name": "Blue",
+                "description": "Blue",
+                "name": "B02"
+            },
+            {
+                "common_name": "Green",
+                "description": "Green",
+                "name": "B03"
+            },
+            {
+                "common_name": "Red",
+                "description": "Red",
+                "name": "B04"
+            },
+            {
+                "common_name": "Vegetation Red Edge",
+                "description": "Vegetation Red Edge (704.1nm)",
+                "name": "B05"
+            },
+            {
+                "common_name": "Vegetation Red Edge",
+                "description": "Vegetation Red Edge (740.1nm)",
+                "name": "B06"
+            },
+            {
+                "common_name": "Vegetation Red Edge",
+                "description": "Vegetation Red Edge (782.8nm)",
+                "name": "B07"
+            },
+            {
+                "common_name": "NIR",
+                "description": "NIR",
+                "name": "B08"
+            },
+            {
+                "common_name": "Narrow NIR",
+                "description": "Narrow NIR",
+                "name": "B8A"
+            },
+            {
+                "common_name": "Water Vapour",
+                "description": "Water Vapour",
+                "name": "B09"
+            },
+            {
+                "common_name": "SWIR - Cirrus",
+                "description": "SWIR - Cirrus",
+                "name": "B10"
+            },
+            {
+                "common_name": "SWIR",
+                "description": "SWIR (1613.7nm)",
+                "name": "B11"
+            },
+            {
+                "common_name": "SWIR",
+                "description": "SWIR (2202.4nm)",
+                "name": "B12"
+            },
+            {
+                "common_name": "Cloud Mask",
+                "description": "Cloud Mask",
+                "name": "CLD"
+            },
+            {
+                "common_name": "Scene Classification Layer",
+                "description": "Scene Classification Layer",
+                "name": "SCL"
+            }
+        ],
+        "gsd": 10,
+        "instruments": [
+            "MSI"
+        ],
+        "platform": "Sentinel-2"
+    },
+    "stac_extensions": [
+        "eo"
+    ],
+    "stac_version": "1.0.0-beta.2",
+    "type": "Feature"
+}
