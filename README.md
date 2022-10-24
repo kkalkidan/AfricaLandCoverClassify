@@ -12,7 +12,37 @@ Returns:
 - Landcover map with seven land cover classes 
 ![lcn_classes.png](https://github.com/kkalkidan/AfricaLandCoverClassify/blob/main/afrimap/lcn_classes.png)
 
-## Modules
+## Quick Test
+
+If 
+
+How to output a segementation map, given sample satellite image data?
+
+> Make sure the satellite image you want to predict is composed of 13 bands 
+"B02", "B03","B04", "B05", "B06", "B07", "B08", "B8A","B11", "B12", "NDVI","MNDWI", "NDBI","SCL"
+
+First you need to install the required packages to run inference or training. If you encounter error during installation please refer [here](#commonly-encountered-installation-issues) for more information.
+
+```
+cd AfricaLandCoverClassify
+
+python -m venv myenv
+
+source myenv/bin/activate 
+
+pip install requirements.txt
+```
+
+
+Run inference 
+
+```
+./infer.sh [SATELLITE IMAGE]
+
+./infer.sh 
+```
+
+## Modules Overview
 
 The Afrimap package is consists of four modules:
 1. Data Collection Module
@@ -115,7 +145,7 @@ The prep-data writes the cropped images and labels in `afrimap/data_preparation/
 For the inference phase, the use only needs to provide the path to the median satellite image downloaded from Google Earth Engine. The satellite image is a tiff file with 13 bands.
 
 ```
-python -m  afrimap prep-data --type infer --image_path afrimap/data_collection/Botswana_Gaborone_median.tif 
+python -m  afrimap prep-data --type infer --image_path afrimap/data_collection/infer_data/Botswana_Gaborone_median.tif 
 
 ```
 
@@ -157,7 +187,7 @@ In the inference phase, the model path needs to be provided.
 python -m afrimap train-infer --type infer --image_path afrimap/data_preparation/Botswana_Gaborone_median --model_path afrimap/train_infer/output/manet_best.pth
 
 ```
-The segementation output will be saved in a folder inside `afrimap/post_process`
+The segementation outputs will be saved in a folder inside `afrimap/post_process`
 
 ### 4. Post-processing Module
 
@@ -179,11 +209,31 @@ python -m afrimap post-process --predictions afrimap/post_process/BotswanaGaboro
 ```
 
 
-How to output a segementation map, given sample satellite image data?
+## Commonly Encountered Installation Issues
 
-> Make sure the satellite images are composed of 13 bands 
-"B02", "B03","B04", "B05", "B06", "B07", "B08", "B8A","B11", "B12", "NDVI","MNDWI", "NDBI","SCL"
+1. earthengine authenticate returns an 'invalid app error'. This means you need to upgrade your earthengine API package using these:
+
+```
+pip install earthengine-api --upgrade
 
 ```
 
+2. `pip install GDAL` fails. In this case if you are a MAC OS X user use `brew` to install gdal:
+
 ```
+brew install GDAL
+pip install gdal 
+
+```
+
+If you are using Linux, try installing gdal by following the these steps:
+
+```
+sudo apt-get install gdal-bin
+sudo apt-get install libgdal-dev
+pip install GDAL==$(gdal-config --version) --global-option=build_ext --global-option="-I/usr/include/gdal"
+
+```
+
+
+

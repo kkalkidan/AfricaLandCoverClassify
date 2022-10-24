@@ -6,3 +6,4 @@ BotswanaGaborone/
 **/*.pth
 BotswanaGaborone_seg*
 */Botswana_Gaborone_median
+env/
