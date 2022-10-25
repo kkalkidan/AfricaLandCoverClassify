@@ -27,11 +27,11 @@ First you need to install the required packages to run inference or training. If
 ```
 cd AfricaLandCoverClassify
 
-python -m venv myenv
+conda create -n myenv python=3.7
 
-source myenv/bin/activate 
+conda activate myenv
 
-pip install requirements.txt
+pip install requirement.txt
 
 ```
 Train a mock model **This model is trained on mock dataset please ONLY for package  testing purposes**
