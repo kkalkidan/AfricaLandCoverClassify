@@ -67,7 +67,7 @@ def infer_collect(date, geom):
 
     start_date = ee.Date(date[0])
     end_date = ee.Date(date[1])
-    now = datetime.datetime.utcnow()
+    now = datetime.date.today().strftime("%Y-%m-%d")
     bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B8A', 'B11', 'B12', 'NDVI', 'MNDWI', 'NDBI', 'SCL']
     dest = f"sentinel2_level2A_median_{now}"
     region = ee.Geometry.Rectangle(geom)
@@ -76,4 +76,4 @@ def infer_collect(date, geom):
     print(crs)
     print(median.select('NDVI').getInfo())
     print(median.bandNames().getInfo())
-    download(median, crs, dest+'_median', region)
+    download(median, crs, dest, region)

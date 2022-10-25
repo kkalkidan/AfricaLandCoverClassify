@@ -14,12 +14,13 @@ Returns:
 
 ## Quick Test
 
-If 
 
 How to output a segementation map, given sample satellite image data?
 
 > Make sure the satellite image you want to predict is composed of 13 bands 
 "B02", "B03","B04", "B05", "B06", "B07", "B08", "B8A","B11", "B12", "NDVI","MNDWI", "NDBI","SCL"
+
+However, in this situation we will run inference on an existing satellite image in `data_collection/infer_data`
 
 First you need to install the required packages to run inference or training. If you encounter error during installation please refer [here](#commonly-encountered-installation-issues) for more information.
 
@@ -31,16 +32,25 @@ python -m venv myenv
 source myenv/bin/activate 
 
 pip install requirements.txt
-```
 
+```
+Train a mock model **This model is trained on mock dataset please ONLY for package  testing purposes**
+
+```
+python -m afrimap train-infer --type train --image_path afrimap/data_preparation/lcn32_dataset_images --label_path afrimap/data_preparation/lcn32_dataset_labels --nb_epochs 15
+
+```
 
 Run inference 
 
 ```
 ./infer.sh [SATELLITE IMAGE]
 
-./infer.sh 
+./infer.sh sentinel2_level2A_median_2022-10-24.tif
+
 ```
+
+The segementation will be saved as sentinel2_level2A_median_2022-10-24_seg.png/tif in the AfriLandCover directory
 
 ## Modules Overview
 
@@ -175,7 +185,7 @@ Options:
 Train with the sample mock data(not recommended, only for testing purposes)
 
 ```
-python -m afrimap train-infer --type train --image_path afrimap/data_preparation/lcn32_dataset_images --label_path afrimap/data_preparation/lcn32_dataset_labels --nb_epochs 5
+python -m afrimap train-infer --type train --image_path afrimap/data_preparation/lcn32_dataset_images --label_path afrimap/data_preparation/lcn32_dataset_labels --nb_epochs 15
 
 ```
 The trained model will be saved in the `afrimap/train_infer/output` folder

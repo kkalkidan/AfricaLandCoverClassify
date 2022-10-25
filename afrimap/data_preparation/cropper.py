@@ -112,7 +112,7 @@ def infer_crop(file_path):
     ds=None
     print("Finished " , datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), " in  " , endTime-startTime)
 
-    os.system(f" rm -r afrimap/data_preparation/{outDir}; mv {outDir} afrimap/data_preparation")
+    os.system(f"rm -r --force afrimap/data_preparation/{outDir}; mv {outDir} afrimap/data_preparation/")
 
     dest = str(Path("afrimap/data_preparation", outDir))
     print("Cropped data written to: ", dest)

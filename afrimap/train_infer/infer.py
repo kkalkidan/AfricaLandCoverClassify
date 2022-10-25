@@ -40,7 +40,7 @@ def infer(model_path, dataset_path):
 
             driver = gdal.GetDriverByName("GTiff")
             outDir = Path(label_path).stem.split('_')
-            outDir = outDir[0] + outDir[1] 
+            outDir = "infer_output"
             if not os.path.exists(outDir):
                 os.makedirs(outDir)
             outFullFileName = str(Path(outDir, (filename + file_extension)))
@@ -56,7 +56,7 @@ def infer(model_path, dataset_path):
                 outdata.GetRasterBand(i+1).WriteArray(output[i, :, :].cpu().numpy())
                 outdata.GetRasterBand(i+1).SetNoDataValue(0)
             outdata.FlushCache()
-    os.system(f"mv {outDir} afrimap/post_process/")
+    os.system(f"rm --force -r afrimap/post_process; mv  {outDir} afrimap/post_process/")
           
 
 
