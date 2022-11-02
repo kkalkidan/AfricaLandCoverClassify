@@ -490,5 +490,5 @@ class MAnet(SegmentationModel):
 
 
 if __name__=='__main__':
-    model = MAnet(encoder_weights="imagenet", in_channels=13, classes=6, decoder_use_batchnorm=True)
+    model = MAnet(encoder_weights="imagenet", in_channels=13, classes=8, decoder_use_batchnorm=True, activation=None)
     print(model)

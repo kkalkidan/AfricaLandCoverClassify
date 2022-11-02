@@ -34,14 +34,8 @@ conda activate myenv
 pip install requirement.txt
 
 ```
-Train a mock model **This model is trained on mock dataset please ONLY for package  testing purposes**
 
-```
-python -m afrimap train-infer --type train --image_path afrimap/data_preparation/lcn32_dataset_images --label_path afrimap/data_preparation/lcn32_dataset_labels --nb_epochs 15
-
-```
-
-Run inference 
+Run inference using our best performing model
 
 ```
 ./infer.sh [SATELLITE IMAGE]
@@ -51,6 +45,8 @@ Run inference
 ```
 
 The segementation will be saved as sentinel2_level2A_median_2022-10-24_seg.png/tif in the AfriLandCover directory
+
+**`infer.sh` will output two segmentation files in tiff and png format**  png format is useful for quickly visualizing the output segmentation 
 
 ## Modules Overview
 

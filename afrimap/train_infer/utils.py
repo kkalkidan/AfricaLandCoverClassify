@@ -34,14 +34,14 @@ def get_train_val(images_path, label_path=None):
     
     if(label_path is None):
         infer_df = pd.read_csv("afrimap/train_infer/infer.csv")
-        infer_loader = LandCoverNetLoader32(images_path, label_path, df=infer_df)
+        infer_loader = LandCoverNetLoader32(images_path, label_path, df=infer_df, batch_size=1, transform=True)
         return infer_loader
     sample_train_val(images_path)
     train_df = pd.read_csv("afrimap/train_infer/train.csv")
     val_df = pd.read_csv("afrimap/train_infer/val.csv")
 
-    train_loader = LandCoverNetLoader32Aug(images_path, label_path, df=train_df)
-    val_loader = LandCoverNetLoader32(images_path, label_path, df=val_df)
+    train_loader = LandCoverNetLoader32Aug(images_path, label_path, df=train_df, batch_size=4, transform=True)
+    val_loader = LandCoverNetLoader32(images_path, label_path, df=val_df, batch_size=4, transform=True)
     print('++++++++Calculating weights+++++++')
     weights = get_class_distribution(train_loader)
     weights[0] = 0
@@ -74,7 +74,7 @@ def cross_entropy(weight):
 def create_configs(lr=0.02, class_weights=None):
     # manually configed class weights, snow and 
     # build model architecture, then print to console
-    model =  MAnet(encoder_weights="imagenet", in_channels=13, classes=8, decoder_use_batchnorm=True)
+    model =  MAnet(encoder_weights="imagenet", in_channels=13, classes=8, decoder_use_batchnorm=True, activation=None)
 
     # prepare for (multi-device) GPU training
     device, device_ids = prepare_device(1)

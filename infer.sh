@@ -10,10 +10,10 @@ SAT_IMAGE=$1
 
 echo "Cropping the satellite image into 32x32 pixel image"
 echo "###### Cropping: $SAT_IMAGE.tif #######"
-python -m  afrimap prep-data --type infer --image_path afrimap/data_collection/infer_data/$SAT_IMAGE.tif
+python -m  afrimap prep-data --type infer --image_path afrimap/data_collection/infer_data/${SAT_IMAGE%.*}.tif
 
 echo "####### Running Inference ... #######"
-python -m afrimap train-infer --type infer --image_path afrimap/data_preparation/$SAT_IMAGE --model_path afrimap/train_infer/output/manet_best.pth
+python -m afrimap train-infer --type infer --image_path afrimap/data_preparation/${SAT_IMAGE%.*} --model_path 22_0200_8class_manet_kcl_best.pth
 
 echo "###### Mosaic and save tif and png file at ${SAT_IMAGE%.*} #######"
-python -m afrimap post-process --predictions afrimap/post_process/infer_output --destination "${SAT_IMAGE%.*}"
+python -m afrimap post-process --predictions afrimap/post_process/infer_output --destination "${SAT_IMAGE%.*}_seg.tif"

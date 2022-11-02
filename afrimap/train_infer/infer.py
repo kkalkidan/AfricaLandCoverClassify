@@ -1,5 +1,3 @@
-                
-
 from pathlib import Path
 from afrimap.train_infer.utils import create_configs, get_train_val, prepare_device
 import torch 
@@ -8,12 +6,11 @@ from tqdm import tqdm
 import os
 
 def infer(model_path, dataset_path):
-
     device, device_id = prepare_device(1)
     model, _, _, _, _ = create_configs()
     model = model.to(device)
   
-    model.load_state_dict(torch.load(model_path))
+    model.load_state_dict(torch.load(model_path, map_location=device))
 
     dataset_loader = get_train_val(dataset_path)
    
@@ -56,7 +53,7 @@ def infer(model_path, dataset_path):
                 outdata.GetRasterBand(i+1).WriteArray(output[i, :, :].cpu().numpy())
                 outdata.GetRasterBand(i+1).SetNoDataValue(0)
             outdata.FlushCache()
-    os.system(f"rm --force -r afrimap/post_process; mv  {outDir} afrimap/post_process/")
+    os.system(f"rm --force -r afrimap/post_process/{outDir}; mv  {outDir} afrimap/post_process/")
           
 
 

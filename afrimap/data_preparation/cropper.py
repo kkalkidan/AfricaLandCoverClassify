@@ -52,7 +52,10 @@ def crop(image, outDir, filename, file_extension, ds):
             outFullFileName = os.path.join( outDir, filename + '_%d_%d' % (startY, startX)  + file_extension)
             # print(outFullFileName)
             # print(currentTile.shape)
-            subsetGeoTiff(ds, outFullFileName, currentTile, start, tileSize,  currentTile.shape[0], outDir)            
+            subsetGeoTiff(ds, outFullFileName, currentTile, start, tileSize,  currentTile.shape[0], outDir)  
+            dest_dir = f"afrimap/data_preparation/{filename}"
+            os.system(f"mv {outFullFileName} {dest_dir}/")
+                   
     
     
 
@@ -106,15 +109,15 @@ def infer_crop(file_path):
         os.makedirs(outDir)
 
     filename = outDir
-
-    crop(image, outDir, filename, file_extension, ds)  
+    outDir = "."
+    dest_dir = f"afrimap/data_preparation/{filename}"
+    os.system(f"rm -r --force {dest_dir}/; mkdir {dest_dir};")
+    crop(image, outDir, filename, file_extension, ds)
+      
     endTime = datetime.now()
     ds=None
     print("Finished " , datetime.now().strftime("%m/%d/%Y, %H:%M:%S"), " in  " , endTime-startTime)
 
-    os.system(f"rm -r --force afrimap/data_preparation/{outDir}; mv {outDir} afrimap/data_preparation/")
+    print("Cropped data written to: ", dest_dir)
 
-    dest = str(Path("afrimap/data_preparation", outDir))
-    print("Cropped data written to: ", dest)
-
-    return dest
+    return dest_dir

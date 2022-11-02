@@ -1,7 +1,7 @@
 import os
 import numpy as np
 from skimage import io
-import matplotlib.pyplot as plt
+import matplotlib
 from pathlib import Path
 
 def mosaic(predictions, destination):
@@ -20,13 +20,16 @@ COLOR_DICT = {
 }
 
 def visualize(destination):
+    print(destination)
     img = io.imread(destination)
+    
     img = img[:,:,0] if len(img.shape) == 3 else img
     img_out = np.zeros(img.shape + (3,))
     # print('img_out', img_out.shape)
     for i in range(len(COLOR_DICT)):
         img_out[img == i,:] = COLOR_DICT[i]
-    img_out = img_out / 255
-    fig = plt.figure()
-    plt.imshow(img_out)
-    fig.savefig(Path(destination).stem, dpi=fig.dpi)
+    # img_out = img_out / 255    
+    matplotlib.image.imsave(f"{destination.split('.')[0]}.png", img_out/255)
+
+if __name__ == "__main__":
+    visualize("/home/kalkidan/AfricaLandCoverClassify/sentinel2_level2A_median_2022-10-24.tiff")
