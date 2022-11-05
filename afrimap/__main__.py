@@ -24,13 +24,14 @@ def main(prog_name="afrimap"):
 @click.option("--ymax", default=None, help=" xMax of xMin, yMin, xMax, yMax for area of interest", type=float)
 @click.option("--start_date", default=None, help="start date for filtering collection by date in YYYY-mm-dd format")
 @click.option("--end_date", default=None, help="end date for filtering collection by date in YYYY-mm-dd format")
+@click.option("--dest_name", default=None, help="name to include in destination file(for inference only)")
 @click.option("--mlhub_key", default=None, help="MLHUB_API_KEY from Radient MLHUB(https://mlhub.earth/profile)")
-def collect_data(type, xmin, xmax, ymin, ymax, start_date, end_date, mlhub_key):
+def collect_data(type, xmin, xmax, ymin, ymax, start_date, end_date, dest_name, mlhub_key):
     if(type == "infer"):
         assert None not in [xmin, xmax, ymin, ymax], "geometry for area of interest is not provided."
         assert None not in [start_date, end_date], "value for start or end date is not provided " 
         from afrimap.data_collection.infer_collect import infer_collect 
-        infer_collect(date=[start_date, end_date], geom=[xmin, ymin, xmax, ymax])
+        infer_collect(date=[start_date, end_date], geom=[xmin, ymin, xmax, ymax], dest_name=dest_name)
     else:
         assert mlhub_key, "please provide MLHUB_API_KEY after signing up for an account on Radiant MLHUB(https://mlhub.earth/profile)"
         from afrimap.data_collection.train_collect import train_collect

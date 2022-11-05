@@ -63,13 +63,14 @@ def get_masked_median(region, start_date, end_date, s2_all=s2):
 
   return ee.ImageCollection(srWithCloudMask).map(maskClouds).median().clip(region), crs
 
-def infer_collect(date, geom):
+def infer_collect(date, geom, dest_name=None):
 
     start_date = ee.Date(date[0])
     end_date = ee.Date(date[1])
     now = datetime.date.today().strftime("%Y-%m-%d")
     bands = ['B2', 'B3', 'B4', 'B5', 'B6', 'B7', 'B8', 'B8A', 'B11', 'B12', 'NDVI', 'MNDWI', 'NDBI', 'SCL']
-    dest = f"sentinel2_level2A_median_{now}"
+    dest = f"sen2_l2A_median_{now}"
+    if dest_name: dest = f"{dest_name}_sen2_l2A_{now}"
     region = ee.Geometry.Rectangle(geom)
     median, crs = get_masked_median(region, start_date = start_date, end_date=end_date)
     median = add_indices(median).select(bands)
